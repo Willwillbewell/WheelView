@@ -171,7 +171,7 @@ public class WheelView extends ScrollView {
 
     private void initData() {
         displayItemCount = offset * 2 + 1;
-
+        views.removeAllViews();
         for (String item : items) {
             views.addView(createView(item));
         }
